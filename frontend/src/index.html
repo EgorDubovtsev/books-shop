@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Books Shop</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="wallpaper"></div>
+	<div class="userMenu">
+		<div class="name">User 1</div>
+		<div class="exit">Log Out</div>
+	</div>
+	<div class="cart"><!-- Сделать,чтобы при уменьшении до определенного размера она становилась релейтив -->
+		<!-- картинка корзины -->
+	</div>
+	<div class="mainName">Books Shop</div>
+	<form class="search">
+		<input type="text" placeholder="Название книги" name="search" id="searchLine">
+		<a href="#" id="searchButton">Search</a>
+	</form>
+	<div class="filters">
+		<div class="filterColumn">
+			<label >Автор: <input type="text" name="author" class="filterField"></label>
+		</div>
+		<div class="filterColumn">
+			<label>Жанр: 
+				<select class="filterField">
+					<option selected="selected">Выберите жанр</option>
+					<option>Детектив</option>
+					<option>Роман</option>
+					<option>Драмма</option>
+					<option>Научная фантастика</option>
+				</select>
+			</label>
+		</div>
+		<div class="filterColumn">
+			<label >Цена до: <input type="number" name="price" class="filterField"></label>
+		</div>
+	</div>
+
+	<div class="allBooks"></div><!-- При первоначальном переходе появляются все книги -->
+	<div class="searchResults">
+		<h2 class="resultText">Результаты по запросу N</h2>
+		<div class="booksList">
+			<div class="book"><!-- Картинка и название -->
+				<div class="bookPicture"></div>
+				<h3 class="bookName">Nicomachean Ethics – Aristotle</h3>
+			</div>
+			<div class="book"><!-- Картинка и название -->
+				<div class="bookPicture"></div>
+				<h3 class="bookName">Nicomachean Ethics – Aristotle</h3>
+			</div>
+			<div class="book"><!-- Картинка и название -->
+				<div class="bookPicture"></div>
+				<h3 class="bookName">Nicomachean Ethics – Aristotle</h3>
+			</div>
+			<div class="book"><!-- Картинка и название -->
+				<div class="bookPicture"></div>
+				<h3 class="bookName">Nicomachean Ethics – Aristotle</h3>
+			</div>
+			<div class="book"><!-- Картинка и название -->
+				<div class="bookPicture"></div>
+				<h3 class="bookName">Nicomachean Ethics – Aristotle</h3>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>
