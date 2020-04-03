@@ -9,13 +9,19 @@
 <body>
 <div class="wallpaper"></div>
 <div class="regPlace">
-	<div class="logWindow">
+	<div class="regWindow">
 		<form class="regFields">
-			<h3>Укажите данные для входа</h3>
+			<h3>Регистрация нового пользователя</h3>
 			<input class="filterField regImpt" placeholder="Логин" type="text" name="login">
 			<input class="filterField regImpt" placeholder="Пароль" type="password" name="pass">
-			<a href="#" class="btn regBtn">Войти</a>
-			<a href="registration.html" class="haveAcc">Еще нет аккаунта?</a>
+			<input class="filterField regImpt" placeholder="Имя" type="text" name="name">
+			<input class="filterField regImpt" placeholder="Дата рождения" type="date" name="date">
+			<select class="filterField regImpt">
+				<option>Я сотрудник</option>
+				<option selected="selected">Я покупатель</option>
+			</select>
+			<a href="#" class="btn regBtn">Зарегестрироваться</a>
+			<a href="login.html" class="haveAcc"> Уже есть аккаунт?</a>
 		</form>
 	</div>
 </div>

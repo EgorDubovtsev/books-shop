@@ -2,21 +2,25 @@
 <html>
 <head>
 	<title>Books Shop</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
 	<div class="wallpaper"></div>
 	<div class="userMenu">
-		<div class="name">User 1</div>
-		<div class="exit">Log Out</div>
+		<div class="name"><a href="#">User 1</a></div>
+		<div class="exit"><a href="#">Log Out</a></div>
 	</div>
-	<div class="cart"><!-- Сделать,чтобы при уменьшении до определенного размера она становилась релейтив -->
-		<!-- картинка корзины -->
-	</div>
+	<a href="#"><div class="cart">
+		<span class="icon-cart"></span>
+	</div></a>
+	
 	<div class="mainName">Books Shop</div>
 	<form class="search">
 		<input type="text" placeholder="Название книги" name="search" id="searchLine">
-		<a href="#" id="searchButton">Search</a>
+		<a href="#" id="searchButton">Найти</a>
 	</form>
 	<div class="filters">
 		<div class="filterColumn">
@@ -38,27 +42,55 @@
 		</div>
 	</div>
 
-	<div class="allBooks"></div><!-- При первоначальном переходе появляются все книги -->
-	<div class="searchResults">
+	<div id="windowBack" class="windowBack"></div><!-- черный фон -->
+	<div id="window" class="window">				<!-- всплывающее окно -->
+		<div id="closeWindow" class="closeWindow"><a onclick="closeWindow()" href="#">X</a></div>
+	</div>
+
+	<div class="allBooks"><!-- При первоначальном переходе появляются все книги -->
+		<div class="space"></div>
+		<div class="booksList">
+			<div class="book">
+				<div class="bookPicture"></div>
+				<h3 class="bookName">Nicomachean Ethics – Aristotle</h3>
+			</div>
+			<div class="book">
+				<div class="bookPicture"></div>
+				<h3 class="bookName">Nicomachean Ethics – Aristotle</h3>
+			</div>
+			<div class="book">
+				<div class="bookPicture"></div>
+				<h3 class="bookName">Nicomachean Ethics – Aristotle</h3>
+			</div>
+			<div class="book">
+				<div class="bookPicture"></div>
+				<h3 class="bookName">Nicomachean Ethics – Aristotle</h3>
+			</div>
+			<div class="book">
+				<div class="bookPicture"></div>
+				<h3 class="bookName">Nicomachean Ethics – Aristotle</h3>
+			</div>
+	</div>
+	<div class="searchResults" style="display: none;">
 		<h2 class="resultText">Результаты по запросу N</h2>
 		<div class="booksList">
-			<div class="book"><!-- Картинка и название -->
+			<div class="book">
 				<div class="bookPicture"></div>
 				<h3 class="bookName">Nicomachean Ethics – Aristotle</h3>
 			</div>
-			<div class="book"><!-- Картинка и название -->
+			<div class="book">
 				<div class="bookPicture"></div>
 				<h3 class="bookName">Nicomachean Ethics – Aristotle</h3>
 			</div>
-			<div class="book"><!-- Картинка и название -->
+			<div class="book">
 				<div class="bookPicture"></div>
 				<h3 class="bookName">Nicomachean Ethics – Aristotle</h3>
 			</div>
-			<div class="book"><!-- Картинка и название -->
+			<div class="book">
 				<div class="bookPicture"></div>
 				<h3 class="bookName">Nicomachean Ethics – Aristotle</h3>
 			</div>
-			<div class="book"><!-- Картинка и название -->
+			<div class="book">
 				<div class="bookPicture"></div>
 				<h3 class="bookName">Nicomachean Ethics – Aristotle</h3>
 			</div>
