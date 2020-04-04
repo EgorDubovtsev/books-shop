@@ -1,0 +1,24 @@
+.icon-home:before {
+  content: "\e901";
+}
+.icon-cart:before {
+  content: "\e93a";
+}
+.icon-home{
+	font-size: 40px;
+	margin: auto;
+	color: white;
+}
+.toShop{
+	display: flex;
+	margin-top: 10px;
+	flex-wrap: wrap;
+	position: fixed;
+	border-radius: 50%;
+	justify-content: center;
+	width: 90px;
+	height: 90px;
+	border: 1px solid white;
+	margin-left: 94%;
+	background-color: #FFAB57;
+}

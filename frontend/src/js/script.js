@@ -3,9 +3,7 @@ $(document).ready(function () {
 		var win = $("#window");
 		var wall = $("#windowBack");
 		wall.css("display","block");
-		win.css("display","block");
-		// wall.animate({opacity:"0"},"normal");
-		// win.animate({display:"block", top:"-50",opacity:"0"},"normal");
+		win.css("display","flex");
 		wall.animate({opacity:"0.6"},"normal");
 		
 		win.animate({top:"+100px", opacity:"1"},"normal");
