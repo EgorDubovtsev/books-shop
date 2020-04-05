@@ -10,16 +10,18 @@ body{
 .wallpaper{
 	background: url(../img/fom1.jpg) no-repeat;
 	-webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 	height:100%;
 	width: 100%;
  	position: fixed;
 	z-index: -30;
 }
+input:focus, select:focus{
+	outline:  2px solid #FFAB57 ;
+}
 .userMenu{
-
 	padding-left: 20px;
 	padding-right: 20px;
 	opacity: 0.5;
@@ -46,7 +48,6 @@ body{
 	width: 100%;
 	height: 100px;
 }
-/*ICONS*/
 @font-face {
   font-family: 'icomoon';
   src:  url('../icon/icomoon.eot?y7fg4i');
@@ -58,7 +59,6 @@ body{
   font-style: normal;
   font-display: block;
 }
-
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon' !important;
   speak: none;
@@ -71,7 +71,6 @@ body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 .icon-shopping-cart:before {
   content: "\e900";
 }
@@ -93,7 +92,6 @@ body{
 	border-radius: 50%;
 	background-color: #F34444;
 }
-
 .mainName{
 	font-weight: bold;
 	margin-top: 10px;
@@ -118,7 +116,7 @@ body{
 #searchButton{
 	text-align: center;
 	padding-top: 8px;
-	width: 20%; /*add search icon*/
+	width: 20%;
 	font-size: 20px;
 	background-color: #FFAB57;
 }
@@ -155,9 +153,7 @@ a{
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-   
     -webkit-appearance: none;
-   
 }
 .window{  
 	color: black;
@@ -190,12 +186,10 @@ input::-webkit-inner-spin-button {
 	height:100%;
 	width: 100%;
  	position: fixed;
-	
 }
 .bookPictureInWindow{
 	height: 400px;
 	width: 40%;
-
 	background-color: cyan;
 }
 .bookDescription{
@@ -230,18 +224,17 @@ input::-webkit-inner-spin-button {
 	color: black;
 	display: flex;
 	justify-content: center;
-
 }
 .filterField{
 	font-size: 20px;
 	width: 200px;
 }
 .searchResults{
+	display: none;
 	padding: 20px;
 	margin: auto;
 	width: 80%;
 }
-
 .book{
 	color: black;
 	margin: 30px;
@@ -255,11 +248,9 @@ input::-webkit-inner-spin-button {
 	transform: scale(1.03);
 	transition: 0.2s;
 }
-
 .bookPicture{
 	height: 400px;
 	width: 100%;
-
 	background-color: cyan;
 }
 .booksList{
