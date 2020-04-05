@@ -10,19 +10,14 @@
 <body>
 	<div class="wallpaper"></div>
 	<div class="userMenu">
-		<div class="name">
-			<a href="#">User 1</a>
-		</div>
-		<div class="exit">
-			<a href="#">Log Out</a>
-		</div>
+		<div class="name"><a href="#">User 1</a></div>
+		<div class="exit"><a href="#">Log Out</a></div>
 	</div>
-	<a href="cart.html">
-		<div class="cart">
-			<span class="itemCouter">0</span>
-			<span class="icon-cart"></span>
-		</div>
-	</a>
+	<a href="cart.html"><div class="cart">
+		<span class="itemCouter">0</span>
+		<span class="icon-cart"></span>
+	</div></a>
+	
 	<div class="mainName">Book Shop</div>
 	<form class="search">
 		<input type="text" placeholder="Название книги" name="search" id="searchLine">
@@ -30,7 +25,7 @@
 	</form>
 	<div class="filters">
 		<div class="filterColumn">
-			<label>Автор: <input type="text" name="author" class="filterField"></label>
+			<label >Автор: <input type="text" name="author" class="filterField"></label>
 		</div>
 		<div class="filterColumn">
 			<label>Жанр: 
@@ -44,30 +39,25 @@
 			</label>
 		</div>
 		<div class="filterColumn">
-			<label>Цена до: <input type="number" name="price" class="filterField"></label>
+			<label >Цена до: <input type="number" name="price" class="filterField"></label>
 		</div>
 	</div>
 
-	<div id="windowBack" class="windowBack"></div>
-	<div id="window" class="window">			
-		<div id="closeWindow" class="closeWindow">
-			<a onclick="closeWindow()" href="#">X</a>
-		</div>
+	<div id="windowBack" class="windowBack"></div><!-- черный фон -->
+	<div id="window" class="window">				<!-- всплывающее окно -->
+		<div id="closeWindow" class="closeWindow"><a onclick="closeWindow()" href="#">X</a></div>
 		<div class="bookPictureInWindow"></div>
 		<div class="bookDescription">
 			<h3 class="bookName">Название книги</h3>
 			<p class="descElement">Автор: <span>Аристотель</span></p>
 			<p class="descElement">Год издания: <span>1999</span></p>
-			<p class="descElement sml">
-				Не следует, однако забывать, что начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач. Равным образом дальнейшее развитие различных форм деятельности играет важную роль в формировании модели развития. Не следует, однако забывать, что укрепление и развитие структуры позволяет оценить значение модели развития.
-			</p>
-			<div class="price">
-				<span>1000</span>руб.
-			</div>
-			<a class="btn">Добавить в корзину</a>
+			<p class="descElement sml">Не следует, однако забывать, что начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач. Равным образом дальнейшее развитие различных форм деятельности играет важную роль в формировании модели развития. Не следует, однако забывать, что укрепление и развитие структуры позволяет оценить значение модели развития.</p>
+			<div class="price"><span>1000</span>руб.</div><a class="btn">Добавить в корзину</a>
 		</div>
+		
 	</div>
-	<div class="allBooks">
+
+	<div class="allBooks"><!-- При первоначальном переходе появляются все книги -->
 		<div class="space"></div>
 		<div class="booksList">
 			<div class="book">
@@ -90,9 +80,8 @@
 				<div class="bookPicture"></div>
 				<h3 class="bookName">Nicomachean Ethics – Aristotle</h3>
 			</div>
-		</div>
 	</div>
-	<div class="searchResults">
+	<div class="searchResults" style="display: none;">
 		<h2 class="resultText">Результаты по запросу N</h2>
 		<div class="booksList">
 			<div class="book">
@@ -117,5 +106,5 @@
 			</div>
 		</div>
 	</div>
-</body>
+	</body>
 </html>
