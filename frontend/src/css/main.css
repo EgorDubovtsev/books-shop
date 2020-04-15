@@ -162,13 +162,15 @@ input::-webkit-inner-spin-button {
 	display: none;
 	opacity: 0;
 	width: 60%;
+	min-width: 450px;
+	min-height: 450px;
 	margin-left: 20%;
 	margin-top: 6%;
 	border: 2px solid black;
 	background-color: white;
 	z-index: 7;
 	position: fixed;
-	height: 500px;
+	/*height: 500px;*/
 }
 .closeWindow{
 	position: absolute;
@@ -188,9 +190,12 @@ input::-webkit-inner-spin-button {
  	position: fixed;
 }
 .bookPictureInWindow{
+	margin-left: 2%;
+	margin-right: 2%;
+	min-width: 	300px;
 	height: 400px;
-	width: 40%;
-	background-color: cyan;
+	width: 30%;
+	max-width: 400px;
 }
 .bookDescription{
 	width: 60%;
@@ -236,28 +241,39 @@ input::-webkit-inner-spin-button {
 	width: 80%;
 }
 .book{
+	border-radius: 10px;
 	color: black;
 	margin: 30px;
-	border: 1px solid red;
+	border: 1px solid black;
  	width: 500px;
  	height: 500px;
  	min-width: 400px;
- 	background-color: #EEFEEC;
+ 	background: #EEFEEC;
 }
 .book:hover{
 	transform: scale(1.03);
-	transition: 0.2s;
+	transition: 0.1s;
 }
-.bookPicture{
+.bookPictureWrapper{
+	border-radius: 10px 10px 0px 0px;
+	display: flex;
+	justify-content: center;
 	height: 400px;
 	width: 100%;
-	background-color: cyan;
+	background: linear-gradient(10deg, #EEFEEC,#467E3E);
+	border-bottom: 1px solid black;
+}
+.bookPicture{
+	height: 100%;	
 }
 .booksList{
 	justify-content: center;
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
+}
+.bookName{
+	text-align: center;
 }
 .btn{
 	border-radius: 9px;
@@ -267,6 +283,6 @@ input::-webkit-inner-spin-button {
 	align-items: center;
 }
 .btn:hover{
-	box-shadow: 6px 6px 10px 6px rgba(0,0,0,0.3);
-	border: 1px solid rgba(0,0,0,0.6);
+	transition: 0.3s;
+	box-shadow: 6px 6px 10px 6px rgba(0,0.3,0,0.2);
 }
